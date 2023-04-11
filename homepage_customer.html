@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="homepage_customer.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Homepage - Pharmacity</title>
+</head>
+
+<body>
+    <main>
+        <!-- Image slide start -->
+        <div id="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <input type="radio" name="radio-btn" id="radio5">
+                <!-- slide image start -->
+                <div class="slide first">
+                    <img src="img/Banner1.png" alt="banner1">
+                </div>
+                <div class="slide">
+                    <img src="img/Banner2.png" alt="banner2">
+                </div>
+                <div class="slide">
+                    <img src="img/Banner3.png" alt="banner3">
+                </div>
+                <div class="slide">
+                    <img src="img/Banner4.png" alt="banner4">
+                </div>
+                <div class="slide">
+                    <img src="img/Banner5.png" alt="banner5">
+                </div>
+                <!-- slide image end -->
+                <!-- automatic navigation start -->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                    <div class="auto-btn5"></div>
+                </div>
+                <!-- automatic navigation end -->
+            </div>
+            <!-- manual navigation start -->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+                <label for="radio5" class="manual-btn"></label>
+            </div>
+            <!-- manual navigation end -->
+        </div>
+        <!-- Image slide end -->
+        <script type="text/javascript">
+            var counter = 1;
+            setInterval(function () {
+                document.getElementById('radio' + counter).checked = true
+                counter++;
+                if (counter > 5) {
+                    counter = 1;
+                }
+            }, 4000);
+        </script>
+        <!-- Header -->
+        <div id="header-content"></div>
+        <!-- End header -->
+        <!-- Body -->
+        <div id="body">
+            <!-- Start ListProduct Section -->
+            <div class="title listpro">Danh mục sản phẩm</div>
+            <div class="list-product-section">
+                <button class="protype">
+                    <div class="picture_protype">
+                        <img src="img/prospan-Fort-sp.png" alt="">
+                    </div>
+                    <div class="producttype_name">Dược phẩm</div>
+                </button>
+
+                <button class="protype">
+                    <div class="picture_protype">
+                        <img src="img/P22053_1.png" alt="">
+                    </div>
+                    <div class="producttype_name">Chăm sóc sức khỏe</div>
+                </button>
+
+                <button class="protype">
+                    <div class="picture_protype">
+                        <img src="img/P21906_1N.png" alt="">
+                    </div>
+                    <div class="producttype_name">Chăm sóc cá nhân</div>
+                </button>
+
+                <button class="protype">
+                    <div class="picture_protype">
+                        <img src="img/prospan-Fort-sp 1-1.png" alt="">
+                    </div>
+                    <div class="producttype_name">Sản phẩm tiện lợi</div>
+                </button>
+
+                <button class="protype">
+                    <div class="picture_protype">
+                        <img src="img/P25087_2.png" alt="">
+                    </div>
+                    <div class="producttype_name">Thực phẩm chức năng</div>
+                </button>
+
+                <button class="protype">
+                    <div class="picture_protype">
+                        <img src="img/prospan-Fort-sp 1-2.png" alt="">
+                    </div>
+                    <div class="producttype_name">Mẹ và bé</div>
+                </button>
+
+                <button class="protype">
+                    <div class="picture_protype">
+                        <img src="img/prospan-Fort-sp 1-3.png" alt="">
+                    </div>
+                    <div class="producttype_name">Chăm sóc sắc đẹp</div>
+                </button>
+
+                <button class="protype">
+                    <div class="picture_protype">
+                        <img src="img/prospan-Fort-sp 1-4.png" alt="">
+                    </div>
+                    <div class="producttype_name">Thiết bị y tế</div>
+                </button>
+            </div>
+            <!-- End ListProduct Section -->
+            <!-- Start Outstanding Brand Section -->
+            <div class="brand-section">
+                <div class="title brand">Thương hiệu sản phẩm</div>
+                <button onclick="scrollLeft()" class="press back">
+                    <img src="img/back.png" alt="">
+                </button>
+                <div class="list-brand">
+                    <button class="hotbrand">
+                        <div class="picture_brand">
+                            <img src="img/pharma 1 1.png" alt="">
+                        </div>
+                        <div class="name_brand">Pharmacity</div>
+                    </button>
+
+                    <button class="hotbrand">
+                        <div class="picture_brand">
+                            <img src="img/pharma 1 1.png" alt="">
+                        </div>
+                        <div class="name_brand">Pharmacity</div>
+                    </button>
+
+                    <button class="hotbrand">
+                        <div class="picture_brand">
+                            <img src="img/pharma 1 1.png" alt="">
+                        </div>
+                        <div class="name_brand">Pharmacity</div>
+                    </button>
+
+                    <button class="hotbrand">
+                        <div class="picture_brand">
+                            <img src="img/pharma 1 1.png" alt="">
+                        </div>
+                        <div class="name_brand">Pharmacity</div>
+                    </button>
+
+                    <button class="hotbrand">
+                        <div class="picture_brand">
+                            <img src="img/pharma 1 1.png" alt="">
+                        </div>
+                        <div class="name_brand">Pharmacity</div>
+                    </button>
+
+                    <button class="hotbrand">
+                        <div class="picture_brand">
+                            <img src="img/pharma 1 1.png" alt="">
+                        </div>
+                        <div class="name_brand">Pharmacity</div>
+                    </button>
+
+                    <button class="hotbrand">
+                        <div class="picture_brand">
+                            <img src="img/pharma 1 1.png" alt="">
+                        </div>
+                        <div class="name_brand">Pharmacity</div>
+                    </button>
+
+                    <button class="hotbrand">
+                        <div class="picture_brand">
+                            <img src="img/pharma 1 1.png" alt="">
+                        </div>
+                        <div class="name_brand">Pharmacity</div>
+                    </button>
+
+                    <button class="hotbrand">
+                        <div class="picture_brand">
+                            <img src="img/pharma 1 1.png" alt="">
+                        </div>
+                        <div class="name_brand">Pharmacity</div>
+                    </button>
+
+                </div>
+                <button onclick="scrollRight()" class="press next">
+                    <img src="img/next.png" alt="">
+                </button>
+            </div>
+            <!-- End Outstanding Brand Section -->
+            <!-- Start Banner Section -->
+            <div class="banner">
+                <button class="banner_bottom">
+                    <img src="img/banner.png" alt="Cẩm nang mua sắm">
+                </button>
+            </div>
+            <!-- End Banner Section -->
+            <!-- Start Product suggestion Section -->
+            <div class="product-suggestion">
+                <div class="title pro-suggestion">Gợi ý sản phẩm</div>
+                <div class="list-pro-sugg">
+                    <div class="pro-suggest">
+                        <button class="btn_img">
+                            <img src="img/suggest_pr.png" alt="">
+                        </button>
+                        <div class="tags">
+                            <p>Thương hiệu</p>
+                            <img src="img/pharma_suggest.png" alt="">
+                        </div>
+                        <a href="#" class="title_pro">Thực phẩm bảo vệ sức khỏe Vitamin C 500mg (Chai 60 viên)</a>
+                        <div class="price">20.000 đ/ Chai</div>
+                        <button class="addcart">
+                            <a href="add">Thêm vào giỏ hàng</a>
+                        </button>
+                    </div>
+
+                    <div class="pro-suggest">
+                        <button class="btn_img">
+                            <img src="img/suggest_pr.png" alt="">
+                        </button>
+                        <div class="tags">
+                            <p>Thương hiệu</p>
+                            <img src="img/pharma_suggest.png" alt="">
+                        </div>
+                        <a href="#" class="title_pro">Thực phẩm bảo vệ sức khỏe Vitamin C 500mg (Chai 60 viên)</a>
+                        <div class="price">20.000 đ/ Chai</div>
+                        <button class="addcart">
+                            <a href="add">Thêm vào giỏ hàng</a>
+                        </button>
+                    </div>
+
+                    <div class="pro-suggest">
+                        <button class="btn_img">
+                            <img src="img/suggest_pr.png" alt="">
+                        </button>
+                        <div class="tags">
+                            <p>Thương hiệu</p>
+                            <img src="img/pharma_suggest.png" alt="">
+                        </div>
+                        <a href="#" class="title_pro">Thực phẩm bảo vệ sức khỏe Vitamin C 500mg (Chai 60 viên)</a>
+                        <div class="price">20.000 đ/ Chai</div>
+                        <button class="addcart">
+                            <a href="add">Thêm vào giỏ hàng</a>
+                        </button>
+                    </div>
+
+                    <div class="pro-suggest">
+                        <button class="btn_img">
+                            <img src="img/suggest_pr.png" alt="">
+                        </button>
+                        <div class="tags">
+                            <p>Thương hiệu</p>
+                            <img src="img/pharma_suggest.png" alt="">
+                        </div>
+                        <a href="#" class="title_pro">Thực phẩm bảo vệ sức khỏe Vitamin C 500mg (Chai 60 viên)</a>
+                        <div class="price">20.000 đ/ Chai</div>
+                        <button class="addcart">
+                            <a href="add">Thêm vào giỏ hàng</a>
+                        </button>
+                    </div>
+
+                    <div class="pro-suggest">
+                        <button class="btn_img">
+                            <img src="img/suggest_pr.png" alt="">
+                        </button>
+                        <div class="tags">
+                            <p>Thương hiệu</p>
+                            <img src="img/pharma_suggest.png" alt="">
+                        </div>
+                        <a href="#" class="title_pro">Thực phẩm bảo vệ sức khỏe Vitamin C 500mg (Chai 60 viên)</a>
+                        <div class="price">20.000 đ/ Chai</div>
+                        <button class="addcart">
+                            <a href="add">Thêm vào giỏ hàng</a>
+                        </button>
+                    </div>
+
+                    <div class="pro-suggest">
+                        <button class="btn_img">
+                            <img src="img/suggest_pr.png" alt="">
+                        </button>
+                        <div class="tags">
+                            <p>Thương hiệu</p>
+                            <img src="img/pharma_suggest.png" alt="">
+                        </div>
+                        <a href="#" class="title_pro">Thực phẩm bảo vệ sức khỏe Vitamin C 500mg (Chai 60 viên)</a>
+                        <div class="price">20.000 đ/ Chai</div>
+                        <button class="addcart">
+                            <a href="add">Thêm vào giỏ hàng</a>
+                        </button>
+                    </div>
+
+                    <div class="pro-suggest">
+                        <button class="btn_img">
+                            <img src="img/suggest_pr.png" alt="">
+                        </button>
+                        <div class="tags">
+                            <p>Thương hiệu</p>
+                            <img src="img/pharma_suggest.png" alt="">
+                        </div>
+                        <a href="#" class="title_pro">Thực phẩm bảo vệ sức khỏe Vitamin C 500mg (Chai 60 viên)</a>
+                        <div class="price">20.000 đ/ Chai</div>
+                        <button class="addcart">
+                            <a href="add">Thêm vào giỏ hàng</a>
+                        </button>
+                    </div>
+
+                    <div class="pro-suggest">
+                        <button class="btn_img">
+                            <img src="img/suggest_pr.png" alt="">
+                        </button>
+                        <div class="tags">
+                            <p>Thương hiệu</p>
+                            <img src="img/pharma_suggest.png" alt="">
+                        </div>
+                        <a href="#" class="title_pro">Thực phẩm bảo vệ sức khỏe Vitamin C 500mg (Chai 60 viên)</a>
+                        <div class="price">20.000 đ/ Chai</div>
+                        <button class="addcart">
+                            <a href="add">Thêm vào giỏ hàng</a>
+                        </button>
+                    </div>
+
+                    <div class="pro-suggest">
+                        <button class="btn_img">
+                            <img src="img/suggest_pr.png" alt="">
+                        </button>
+                        <div class="tags">
+                            <p>Thương hiệu</p>
+                            <img src="img/pharma_suggest.png" alt="">
+                        </div>
+                        <a href="#" class="title_pro">Thực phẩm bảo vệ sức khỏe Vitamin C 500mg (Chai 60 viên)</a>
+                        <div class="price">20.000 đ/ Chai</div>
+                        <button class="addcart">
+                            <a href="add">Thêm vào giỏ hàng</a>
+                        </button>
+                    </div>
+
+                    <div class="pro-suggest">
+                        <button class="btn_img">
+                            <img src="img/suggest_pr.png" alt="">
+                        </button>
+                        <div class="tags">
+                            <p>Thương hiệu</p>
+                            <img src="img/pharma_suggest.png" alt="">
+                        </div>
+                        <a href="#" class="title_pro">Thực phẩm bảo vệ sức khỏe Vitamin C 500mg (Chai 60 viên)</a>
+                        <div class="price">20.000 đ/ Chai</div>
+                        <button class="addcart">
+                            <a href="add">Thêm vào giỏ hàng</a>
+                        </button>
+                    </div>
+                    <button class="button_seemore">Xem thêm</button>
+                </div>
+            </div>
+            <!-- End Product suggestion Section -->
+            <!-- Start Freeship Section -->
+            <div class="freeship-section">
+                <div class="freeship-item">
+                    <div class="circle sticky">
+                        <img src="img/freeship.svg" alt="Mien phi van chuyen">
+                    </div>
+                    <div class="content">
+                        <p class="title_free">MIỄN PHÍ VẬN CHUYỂN</p>
+                        <p class="desc">Áp dụng cho đơn hàng từ 300,000 đ</p>
+                    </div>
+                </div>
+
+                <div class="freeship-item">
+                    <div class="circle sticky">
+                        <img src="img/100percent.svg" alt="Mien phi van chuyen">
+                    </div>
+                    <div class="content">
+                        <p class="title_free">100% thuốc chuẩn chính hãng</p>
+                        <p class="desc">Đủ thuốc chuẩn, tư vấn tốt</p>
+                    </div>
+                </div>
+
+                <div class="freeship-item">
+                    <div class="circle sticky">
+                        <img src="img/location.svg" alt="Mien phi van chuyen">
+                    </div>
+                    <div class="content">
+                        <p class="title_free">Nhà thuốc gần bạn</p>
+                        <p class="desc">Tìm ngay nhà thuốc gần nơi bạn sống và ghé thăm</p>
+                    </div>
+                </div>
+
+                <div class="freeship-item">
+                    <div class="circle sticky">
+                        <img src="img/mobileapp.svg" alt="Mien phi van chuyen">
+                    </div>
+                    <div class="content">
+                        <p class="title_free">Tích lũy điểm</p>
+                        <p class="desc">Tích lũy điểm thưởng và sử dụng điểm cho mọi giao dịch</p>
+                    </div>
+                </div>
+            </div>
+            <!-- End Freshipp Section -->
+            <!-- Footer start -->
+            <div id="footer"></div>
+            <!-- Footer end -->
+            <!-- js -->
+            <script src="js/homepage.js"></script>
+            <script src="js/header_footer.js"></script>
+        </div>
+        <!-- End body -->
+    </main>
+    <!-- End Main -->
+</body>
+
+</html>

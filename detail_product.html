@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="detail_product.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Chi tiết sản phẩm</title>
+</head>
+
+<body>
+    <main>
+        <!-- Header -->
+        <div id="header-content"></div>
+        <!-- End header -->
+
+        <!-- Start body -->
+        <div id="body">
+            <!-- Start Banner Section -->
+            <div class="banner">
+                <button class="banner_bottom">
+                    <img src="img/banner.png" alt="Cẩm nang mua sắm">
+                </button>
+            </div>
+            <!-- End Banner Section -->
+
+            <!-- StartProduct detail Section -->
+            <div class="product_detail">
+                <div class="img_pro">
+                    <img src="img/suggest_pr.png" alt="image product">
+                </div>
+
+                <div class="info_pro">
+                    <p class="title_pro">Thực phẩm bảo vệ sức khỏe Vitamin C 500mg (Chao 60 viên)</p>
+
+                    <div class="number_pro">
+                        Mã: <p>P20003</p>
+                    </div>
+
+                    <div class="price">
+                        <p class="vnd">10.000 đ</p>
+                        <p class="points">Mua hàng và tích <span>600 điểm</span> thành viên</p>
+                    </div>
+
+                    <div class="desc">
+                        Hỗ trợ tăng cường miễn dịch cho cơ thể; Hỗ trợ tăng cường sức đề kháng, hỗ trợ giảm mệt mỏi.
+                    </div>
+
+                    <div class="quantity-box" style="text-align: center">
+                        <button class="quantity-button quantity-minus">-</button>
+                        <input class="quantity-input" value="1" />
+                        <button class="quantity-button quantity-plus">+</button>
+                    </div>
+
+                    <div class="buy">
+                        <button class="buy_now">
+                            Mua ngay
+                        </button>
+                        <button class="add_cart">
+                            <i class="fas fa-cart-shopping"></i>
+                            Thêm vào giỏ hàng
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- End Product detail Section -->
+            <!-- Start DescandSuggest Section -->
+            <div class="information">
+                <div class="info_left">
+                    <div class="title_desc">Mô tả</div>
+                    <div class="short_ingredient">Thành phần
+                        <p>Mỗi viên nén bao phim chứa:
+                            <br>Vitamin C (Dưới dạng Acid L-ascorbic): 500 mg
+                            <br>Phụ liệu: Povidon K30, Low-substituted hydroxypropyl Cellulose, Microcrystallin
+                            Cellulose 101, Crospovidon, Hydroxypropyl Methylcellulose, Magnesi Stearat, Novomix,
+                            Colloidal Silicon Dioxid,
+                            <button onclick="showMore()" id="btn_seemore">Xem thêm</button>
+                    </div>
+                    <div class="ingredient"> Thành phần
+                        <p>Mỗi viên nén bao phim chứa:
+                            <br>Vitamin C (Dưới dạng Acid L-ascorbic): 500 mg
+                            <br>Phụ liệu: Povidon K30, Low-substituted hydroxypropyl Cellulose, Microcrystallin
+                            Cellulose 101, Crospovidon, Hydroxypropyl Methylcellulose, Magnesi Stearat, Novomix,
+                            Colloidal Silicon Dioxid, Talc, Polyethylen Glycol 6000, Phẩm màu sunset yellow, Titan
+                            dioxid, Polysorbat 80, Phẩm màu erythrosine.
+                            <br>Công dụng
+                            Bổ sung vitamin C cho cơ thể, hỗ trợ chống oxy hóa, tăng cường sức đề kháng mạnh, giảm mệt
+                            mỏi.
+                            Hỗ trợ nguy cơ mắc các bệnh do thiếu vitamin C như: xuất huyết dưới da & chảy máu chân răng.
+                            Đối tượng sử dụng: Người lớn và trẻ em từ 12 tuổi trở lên cần bổ sung vitamin C.
+                            <br>Cách dùng và liều dùng
+                            Trẻ em từ 12 – 18 tuổi: 1 viên/ngày
+                            Người lớn: 1-2 viên/ngày
+                            Nên uống trong hoặc sau bữa ăn sáng hoặc bữa ăn trưa.
+                            Cảnh báo về sức khỏe
+                            Không dùng cho người mẫn cảm với các thành phần trong công thức.
+                            Không dùng Vitamin C liều cao cho người có nguy cơ thiếu máu tán huyết, người bị sỏi calci
+                            oxalat ở thận.
+                            <br>Thời hạn sử dụng
+                            36 tháng kể từ NSX được ghi trên nhãn bao bì
+                            <br>Bảo quản
+                            Nơi khô thoáng, tránh ánh nắng trực tiếp, nhiệt độ dưới 30 độ C
+                            <br>Tên và địa chỉ của tổ chức, cá nhân chịu trách nhiệm về sản phẩm: Công ty Cổ phần Dược
+                            phẩm
+                            Agimexpharm27 Nguyễn Thái Học, Phường Mỹ Bình, Thành phố Long Xuyên, Tỉnh An Giang, Việt Nam
+                            <br>Nhà sản xuất: Công ty Cổ phần Dược Nature Việt NamSố 19, Đường số 18, Khu phố 3, Phường
+                            Linh
+                            Chiểu, Quận Thủ Đức, Thành phố Hồ Chí Minh, Việt Nam
+                            <br>Phân phối sản phẩm bởi: Công ty Cổ phần Dược phẩm Pharmacity248A Nơ Trang Long, Phường
+                            12,
+                            Quận Bình Thạnh, Thành phố Hồ Chí Minh, Việt Nam
+                            <br>ĐT: (+84) 28 7300 3350 – 1800 6821
+                            <br>Web: www.pharmacity.vn
+                            <br>Số ĐKSP: 2379/2021/ĐKSP
+                            <br>Số XNQC: 1422/2021/XNQC-ATTP
+                            *Thực phẩm này không phải là thuốc, không có tác dụng thay thế thuốc chữa bệnh.
+                        </p>
+                        <button onclick="showMore()" id="btn_seeless">Ẩn bớt</button>
+                    </div>                    
+                </div>
+
+                <div class="info_right">
+                    <div class="title_desc">Sản phẩm tương tự</div>
+                    <div class="list-product">
+                        <div class="product">
+                            <button class="btn_img">
+                                <img src="img/suggest_pr.png" alt="">
+                            </button>
+                            <div class="tags">
+                                <p>Thương hiệu</p>
+                                <img src="img/pharma_suggest.png" alt="">
+                            </div>
+                            <a href="#" class="title_pro">Thực phẩm bảo vệ sức khỏe Vitamin C 500mg (Chai 60
+                                viên)</a>
+                            <div class="price">20.000 đ/ Chai</div>
+                            <button class="addcart">
+                                <a href="#">Thêm vào giỏ hàng</a>
+                            </button>
+                        </div>
+
+                        <div class="product">
+                            <button class="btn_img">
+                                <img src="img/suggest_pr.png" alt="">
+                            </button>
+                            <div class="tags">
+                                <p>Thương hiệu</p>
+                                <img src="img/pharma_suggest.png" alt="">
+                            </div>
+                            <a href="#" class="title_pro">Thực phẩm bảo vệ sức khỏe Vitamin C 500mg (Chai 60
+                                viên)</a>
+                            <div class="price">20.000 đ/ Chai</div>
+                            <button class="addcart">
+                                <a href="#">Thêm vào giỏ hàng</a>
+                            </button>
+                        </div>
+
+                        <div class="product">
+                            <button class="btn_img">
+                                <img src="img/suggest_pr.png" alt="">
+                            </button>
+                            <div class="tags">
+                                <p>Thương hiệu</p>
+                                <img src="img/pharma_suggest.png" alt="">
+                            </div>
+                            <a href="#" class="title_pro">Thực phẩm bảo vệ sức khỏe Vitamin C 500mg (Chai 60
+                                viên)</a>
+                            <div class="price">20.000 đ/ Chai</div>
+                            <button class="addcart">
+                                <a href="#">Thêm vào giỏ hàng</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End DescandSuggest Section -->
+        </div>
+        <!-- End body -->
+
+        <!-- Start footer -->
+        <div id="footer-content"></div>
+        <!-- End footer -->
+        <!-- js -->
+        <script src="js/header_footer.js"></script>
+        <script src="js/detail_product.js"></script>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+@font-face {
+    font-family: 'Inter';
+    src: url('path/to/inter.woff2') format('woff2'),
+        url('path/to/inter.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+#header {
+    position: fixed;
+    left: 29px;
+    right: 18px;
+    top: 14px;
+    background-color: none;
+    z-index: 2;
+  }
+  
+  #header .slidebar {
+    width: 100%;
+  }
+  
+  /* Navmain */
+  #nav_main {
+    display: flex;
+    height: 35px;
+    justify-content: space-between;
+  }
+  
+  #nav_main .hotline {
+    display: flex;
+    font-size: 16px;
+  }
+  
+  .hotline .text {
+    text-transform: capitalize;
+    padding-right: 23px;
+    line-height: 35px;
+  }
+  
+  .hotline .call {
+    text-decoration: none;
+    width: 128px;
+    padding: 6px 0;
+    background: #003CBF;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hotline .call:hover {
+    opacity: 0.8;
+  }
+  
+  .hotline i {
+    width: 12px;
+    padding: 0 5px;
+    color: #fff;
+  }
+  
+  .hotline a {
+    color: #fff;
+    padding: 15px;
+    text-decoration: none;
+  }
+  
+  #nav_main ul {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  #nav_on {
+    line-height: 35px;
+  }
+  
+  #nav_on li {
+    border-right: 1px solid #142C52;
+    padding: 0 10px;
+    margin: 10px 0;
+    line-height: 15px;
+  }
+  
+  #nav_on>a {
+    text-decoration: none;
+    color: #142C52;
+    margin-left: 10px;
+  }
+  
+  #nav_on i {
+    line-height: 35px;
+    margin-left: 10px;
+    color: #142C52;
+  }
+  
+  #nav_on li>a {
+    text-decoration: none;
+    color: #142C52;
+  }
+  
+  #nav_on a>i:hover,
+  #nav_on a:hover {
+    color: #5eab46;
+  }
+  
+  /* Subnav */
+  #subnav {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Inter', sans-serif;
+    height: 80px;
+    margin-top: 20px;
+    align-items: center;
+  }
+  
+  #subnav img {
+    width: 280px
+  }
+  
+  #subnav button {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 80px;
+  }
+  
+  #subnav a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  #subnav .button_menu {
+    display: flex;
+    width: 208px;
+    height: 60px;
+    background: #142C52;
+    border-radius: 20px;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+    margin: 0 10px;
+  }
+  
+  #subnav .button_menu:hover {
+    transition: 0.3s ease-in-out;
+    background-color: #5eab46;
+  }
+  
+  #subnav .button_menu i {
+    padding: 0 10px;
+  }
+  
+  #subnav .input_search {
+    width: 575px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 24px;
+    display: grid;
+    grid-template-columns: 85% 15%;
+    border: 1px solid #fff;
+  }
+  
+  #subnav .input_search:focus-within {
+    outline: none;
+    border: 1px solid #5eab46;
+    color: #5eab46;
+  }
+  
+  #subnav .input_search input {
+    border: none;
+    outline: none;
+    background: none;
+    padding-left: 34px;
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(20, 44, 82, 0.5);
+  }
+  
+  #subnav .input_search i {
+    font-size: 25px;
+    line-height: 60px;
+    padding-left: 30px;
+  }
+  
+  #subnav .fa-bell {
+    font-size: 24px;
+    padding: 0 15px;
+  }
+  
+  #subnav .fa-bell:hover {
+    animation: bell-anim 0.5s ease-out;
+  }
+  
+  @keyframes bell-anim {
+    0% {
+        transform: translate(0, 0);
+    }
+  
+    10% {
+        transform: translate(0, -2px);
+    }
+  
+    20% {
+        transform: translate(0, 0);
+    }
+  
+    30% {
+        transform: translate(0, -2px);
+    }
+  
+    40% {
+        transform: translate(0, 0);
+    }
+  
+    50% {
+        transform: translate(0, -2px);
+    }
+  }
+  
+  #subnav .buy {
+    display: flex;
+    width: 180px;
+    height: 60px;
+    background: #142C52;
+    border-radius: 20px;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+    padding-left: 15px;
+  }
+  
+  #subnav .buy:hover {
+    transition: 0.3s ease-in-out;
+    background-color: #5eab46;
+  }
+  
+  #subnav .buy i {
+    padding: 0 15px;
+  }

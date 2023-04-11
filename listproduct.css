@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+@font-face {
+  font-family: 'Inter';
+  src: url('path/to/inter.woff2') format('woff2'),
+    url('path/to/inter.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Banner */
+
+body .space {
+  height: 170px;
+}
+
+body .listpr_banner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+body .banner_right {
+  margin-left: 40px;
+}
+
+body .banner_left img:hover,
+body .banner_right img:hover {
+  opacity: 0.8;
+}
+
+/* List product */
+.list {
+  padding: 0 0 0 45px;
+}
+
+.list_drug {
+  display: flex;
+}
+
+/* Lits left */
+.list .title {
+  color: #142C52;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.type_drug {
+  font-weight: 700;
+  font-size: 20px;
+  color: #142C52;
+  padding-bottom: 20px;
+}
+
+.list .list_left {
+  background: rgba(204, 227, 242, 0.5);
+  width: 310px;
+  padding: 20px 20px;
+  margin: 15px 0;
+  border-radius: 23px;
+}
+
+.list_left li {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.list_left .cartegory-left-li .top-down {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list_left .cartegory-left-li .icon {
+  background-image: url("img/angle-small-down.png");
+  width: 30px;
+  background-repeat: no-repeat;
+}
+
+.list_left .cartegory-left-li .top-down {
+  display: flex;
+  margin-top: 20px;
+}
+
+.list_left .cartegory-left-li ul {
+  display: none;
+}
+
+.list_left .cartegory-left-li li>a {
+  text-decoration: none;
+  color: #142C52;
+}
+
+/* List right */
+.cartegory-left-li.block ul {
+  display: block;
+  padding-left: 20px;
+  list-style-type: none;
+  font-weight: 400;
+  font-size: 18px;
+  color: #142C52;
+  display: grid;
+  row-gap: 20px;
+}
+
+/* List right */
+.list_right {
+  width: 1200px;
+}
+
+#body .list-product {
+  padding: 0px 12px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* row-gap: 30px; */
+}
+
+#body .list-product .product {
+  width: 240px;
+  height: 405px;
+  background: #FCFCFC;
+  border-radius: 23px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.product .btn_img {
+  border: none;
+  background: none;
+  padding: 0px 5px;
+}
+
+.product .btn_img:hover {
+  cursor: pointer;
+}
+
+.product .btn_img img {
+  width: 220px;
+}
+
+.product .btn_img img:hover {
+  opacity: 0.8;
+}
+
+.product .tags {
+  width: 135px;
+  height: 20px;
+  background: #C8FBFF;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 15px auto 15px 10px;
+}
+
+.product .tags p {
+  font-size: 9px;
+  color: #142C52;
+}
+
+.product .title_pro {
+  color: #142C52;
+  font-weight: 700;
+  padding: 0 12px 15px;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.product .price {
+  color: #0F62F9;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 0 12px 15px;
+}
+
+.product button.addcart {
+  background: #5EAB46;
+  border-radius: 12px;
+  margin: 0 12px 15px;
+  border: none;
+  height: 34px;
+  transition: 0.3s ease;
+}
+
+.product button.addcart:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.product .addcart a {
+  text-decoration: none;
+  text-align: center;
+  line-height: 34px;
+  color: #FCFCFC;
+}
+
+.addcart a:hover {
+  text-decoration: underline;
+}
+
+.list-product .button_seemore {
+  width: 200px;
+  height: 38px;
+  background: #FCFCFC;
+  border: 1px solid #0F62F9;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 30px 0;
+  transition: 0.3s ease-in-out;
+  color: #0F62F9;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 38px;
+}
+
+.list-product .button_seemore:hover {
+  background: #0F62F9;
+  color: #FCFCFC;
+}
+
+/* Paging */
+.btn_paging {
+  display: flex;
+  justify-content: center;
+  margin: 60px 0;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100px;
+  height: 40px;
+  background: #FFFFFF;
+  border: 1px solid #C4C4C4;  
+  margin: 0 15px;
+  font-size: 15px;
+  font-weight: 500;   
+  border-radius: 5px;
+}
+
+.btn_number {
+  width: 40px;
+  height: 40px;
+  background: #FFFFFF;
+  border: 1px solid #C4C4C4;
+  margin: 0 15px;
+  border-radius: 5px;
+}
+ 
+.btn:hover,
+.btn_number:hover {
+  border: 1px solid #9aa6b9;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  color: #3B9C80;
+}

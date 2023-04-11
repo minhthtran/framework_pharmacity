@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+@font-face {
+    font-family: 'Inter';
+    src: url('path/to/inter.woff2') format('woff2'),
+        url('path/to/inter.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Footer */
+.col {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+  }
+  
+  #footer {
+    /* position: absolute; */
+    width: 100%;
+    background-color: #E5E5E5;
+    color: #142C52;
+    bottom: 0;
+  }
+  
+  #footer .footer_content {
+    display: flex;
+    padding: 60px 100px;
+    column-gap: 50px;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  
+  .footer_content .about-pharmacity .desc {
+    text-align: justify;
+  }
+  
+  .about-pharmacity a {
+    color: #003CBF;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .about-pharmacity a:hover {
+    font-size: 15px;
+  }
+  
+  .footer_content .links-useful a {
+    text-decoration: none;
+    color: #142C52;
+  }
+  
+  .footer_content .links-useful a:hover {
+    text-decoration: underline;
+    color: #5eab46;
+  }
+  
+  .footer_content .social .icon {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #142C52;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .footer_content .social a:hover {
+    margin-left: 5px;
+  }
+  
+  .footer_content .social .icon img {
+    width: 20px;
+    margin-right: 10px;
+  }
+  
+  .footer_content .app-web .QRcode {
+    width: 101px;
+    text-align: center;
+    padding-top: 12px;
+  }
+  
+  .footer_content .app-web-content {
+    display: flex;
+    gap: 15px;
+    padding-top: 15px;
+    align-items: center;
+  }

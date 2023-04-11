@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+@font-face {
+    font-family: 'Inter';
+    src: url('path/to/inter.woff2') format('woff2'),
+        url('path/to/inter.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Body */
+/* Banner */
+#body .banner {
+    width: 100%;
+    margin: 150px 0 30px 0;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner button.banner_bottom {
+    border: none;
+    background: none;
+}
+
+.banner button:hover {
+    cursor: pointer;
+}
+
+.banner .banner_bottom img {
+    width: 1325px;
+    margin-top: 30px;
+    padding: 0 15px;
+}
+
+/* Product detail */
+.product_detail {
+    display: flex;
+    justify-content: space-around;
+}
+
+.product_detail .img_pro {
+    border: 1px solid #C4C4C4;
+    border-radius: 15px;
+    margin: 0 30px;
+}
+
+.product_detail .img_pro img {
+    width: 500px;
+}
+
+.product_detail .info_pro {
+    margin: 0 40px 0 0;
+}
+
+.product_detail .info_pro .title_pro {
+    font-weight: 700;
+    font-size: 30px;
+    color: #142C52;
+}
+
+.info_pro .number_pro {
+    font-weight: 400;
+    font-size: 20px;
+    color: #142C52;
+    display: flex;
+    justify-content: right;
+}
+
+.info_pro .price {
+    margin: 20px 0;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 50px;
+}
+
+.info_pro .price .vnd {
+    font-weight: 700;
+    font-size: 30px;
+    color: #5EAB46;
+}
+
+.info_pro .price .points {
+    font-size: 20px;
+    color: #142C52;
+}
+
+.info_pro .price span {
+    color: #5EAB46;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.info_pro .desc {
+    font-weight: 400;
+    font-size: 20px;
+    color: #142C52;
+}
+
+.info_pro .buy {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info_pro .buy .buy_now {
+    width: 230px;
+    height: 80px;
+    background: #CCE3F2;
+    border: 1px solid #0F62F9;
+    border-radius: 15px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #0F62F9;
+}
+
+.info_pro .add_cart {
+    width: 390px;
+    height: 80px;
+    background: #0F62F9;
+    border: 1px solid #0F62F9;
+    border-radius: 15px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.info_pro .add_cart i {
+    padding-right: 10px;
+}
+
+.info_pro .add_cart:hover {
+    opacity: 0.8;
+}
+
+.info_pro .buy .buy_now:hover {
+    color: #fff;
+    background-color: #0F62F9;
+    ;
+}
+
+/* quantity box */
+.info_pro .quantity-box {
+    width: 149px;
+    height: 46px;
+    background: #FFFFFF;
+    border: 1px solid #CBCBCB;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.info_pro .quantity-input {
+    flex: 1;
+    text-align: center;
+    height: 35px;
+    width: 35px;
+    border: 1.5px solid #0F62F9;
+    border-radius: 4px;
+    background: #0F62F9;
+    color: #fff;
+}
+
+.info_pro .quantity-button {
+    width: 50px;
+    height: 30px;
+    background-color: white;
+    color: black;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.info_pro .quantity-button:hover {
+    color: #0F62F9;
+    ;
+    transition: 0.3s ease-in-out;
+}
+
+/* DescandSuggest Section */
+.information {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Trái */
+.info_left {
+    width: 70%;
+    display: inline-block;
+    height: auto;
+    border: 1px solid #C4C4C4;
+    border-radius: 15px;
+    margin: 20px 33px;
+}
+
+.title_desc {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+    color: #142C52;
+    padding: 20px 0;
+}
+
+.short_ingredient {
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+    text-align: justify;
+    padding: 0 40px 10px;
+}
+
+.info_left .ingredient {
+    display: none;
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+    text-align: justify;
+    padding: 0 40px 10px;
+}
+
+.info_left .ingredient p,
+.short_ingredient p {
+    font-weight: normal;
+}
+
+.info_left #btn_seemore,
+.info_left #btn_seeless  {
+    display: block;
+    text-decoration: underline;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 10px auto;
+}
+
+/* Phải */
+.info_right {
+    width: 30%;
+    border: 1px solid #C4C4C4;
+    border-radius: 15px;
+    margin: 20px 33px;
+}
+
+.list-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: space-around;
+}
+
+#body .list-product .product {
+    width: 290px;
+    height: 460px;
+    background: #FCFCFC;
+    border-radius: 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product .btn_img {
+    border: none;
+    background: none;
+    padding: 0px 5px;
+}
+
+.product .btn_img:hover {
+    cursor: pointer;
+}
+
+.product .btn_img img {
+    width: 280px;
+}
+
+.product .btn_img img:hover {
+    opacity: 0.8;
+}
+
+.product .tags {
+    width: 135px;
+    height: 20px;
+    background: #C8FBFF;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 15px auto 15px 10px;
+}
+
+.product .tags p {
+    font-size: 9px;
+    color: #142C52;
+}
+
+.product .title_pro {
+    color: #142C52;
+    font-weight: 700;
+    padding: 0 12px 15px;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.product .price {
+    color: #0F62F9;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 0 12px 15px;
+}
+
+.product button.addcart {
+    background: #5EAB46;
+    border-radius: 12px;
+    margin: 0 12px 15px;
+    border: none;
+    height: 34px;
+    transition: 0.3s ease;
+}
+
+.product button.addcart:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.product .addcart a {
+    text-decoration: none;
+    text-align: center;
+    line-height: 34px;
+    color: #FCFCFC;
+}
+
+.addcart a:hover {
+    text-decoration: underline;
+}
