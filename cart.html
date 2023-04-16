@@ -18,14 +18,88 @@
         <!-- Start header -->
         <div id="header-content"></div>
         <!-- End header -->
+        <!-- start body -->
         <div id="body">
-
+            <!-- start cart-info -->
+            <div class="cart-info">
+                <!-- start cart section -->
+                <div class="cart">
+                    <h2 class="title">Giỏ hàng</h2>
+                    <!-- start info -->
+                    <div class="info">
+                        <div class="row row1">
+                            <ul style="margin: 0 235px 0 30px">Sản phẩm</ul>
+                            <ul style="margin-left: 10px">Giá tiền</ul>
+                            <ul style="margin-left: 40px">Số lượng</ul>
+                            <ul style="margin-left: 10px">Thành tiền</ul>
+                            <ul></ul>
+                        </div>
+                        <div class="line"></div>
+                        <div class="row row2">
+                            <div class="column col1">
+                                <img src="img/P21744_1.png" alt="ảnh sản phẩm">
+                                <p>Khẩu trang Jomi N95 (Gói 5 cái)</p>
+                            </div>
+                            <div class="column col2" style="width:120px;color: #0065FF">19.500 đ/ Gói</div>
+                            <div class="column quantity-box" style="text-align: center;width:120px">
+                                <button class="quantity-button quantity-minus">-</button>
+                                <input class="quantity-input" value="1" />
+                                <button class="quantity-button quantity-plus">+</button>
+                            </div>
+                            <div class="column col4" style="color: #0065FF">19.500 đ</div>
+                            <div class="column col5">
+                                <i class="fa-solid fa-trash"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end info -->
+                    
+                </div>
+                <!-- end cart section -->
+                
+                <!-- start bill section -->
+                <div class="bills">
+                    <h2 class="title">Hóa đơn mua hàng</h2>
+                    <div class="info-bill">
+                        <div class="bill billrow1">
+                            <p>Tạm tính</p>
+                            <p class="bold">19.500 đ</p>
+                        </div>
+                        <div class="bill billrow2">
+                            <p>Giảm giá</p>
+                            <p class="bold">-0 đ</p>
+                        </div>
+                        <div class="bill billrow3">
+                            <p>Tổng cộng</p>
+                            <p class="bold">19.500</p>
+                        </div>
+                        <div class="bill billrow4" style="color: rgba(20, 44, 82, 0.5)">(Đã bao gồm VAT)</div>
+                        <div class="bill billrow5">
+                            <button class="buymore">Mua thêm</button>
+                            <button id="order">Đặt hàng</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- end bill section -->
+            </div>
+            <!-- end cart-info section -->
+            <div class="line-blue"></div>
         </div>
+        <!-- End body -->
         <!-- Start footer -->
         <div id="footer-content"></div>
         <!-- End footer -->
+        <!-- Start Loading...Section -->
+        <div id="loading" style="display: none;">
+            <div class="load">
+                <div class="spinner"></div>
+                <div style="font-size: 20px; padding-top: 10px; color: #FFFFFF">Đợi một chút nhé...</div>
+            </div>
+        </div>
+        <!-- End Loading...Section -->        
         <!-- js -->
         <script src="js/header_footer.js"></script>
+        <script src="js/cart.js"></script>
     </main>
 </body>
 
