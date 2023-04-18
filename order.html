@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="order.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="icon" href="img/favicon.png">
+    <title>Thanh toán</title>
+</head>
+
+<body>
+    <main>
+        <!-- start header -->
+        <div id="header-content"></div>
+        <!-- end header -->
+
+        <!-- start body -->
+        <div id="body">
+            <!-- start cart-info -->
+            <div class="cart-info">
+                <!-- start left -->
+                <div class="left">
+                    <!-- start cart section -->
+                    <div class="cart">
+                        <h2 class="title">Giỏ hàng</h2>
+                        <!-- start info -->
+                        <div class="info">
+                            <div class="row row1">
+                                <ul style="margin: 0 235px 0 30px">Sản phẩm</ul>
+                                <ul style="margin-left: 10px">Giá tiền</ul>
+                                <ul style="margin-left: 40px">Số lượng</ul>
+                                <ul style="margin-left: 10px">Thành tiền</ul>
+                                <ul></ul>
+                            </div>
+                            <div class="line"></div>
+                            <div class="row row2">
+                                <div class="column col1">
+                                    <img src="img/P21744_1.png" alt="ảnh sản phẩm">
+                                    <p>Khẩu trang Jomi N95 (Gói 5 cái)</p>
+                                </div>
+                                <div class="column col2" style="width:120px;color: #0065FF">19.500 đ/ Gói</div>
+                                <div class="column quantity-box" style="text-align: center;width:120px">
+                                    <button class="quantity-button quantity-minus">-</button>
+                                    <input class="quantity-input" value="1" />
+                                    <button class="quantity-button quantity-plus">+</button>
+                                </div>
+                                <div class="column col4" style="color: #0065FF">19.500 đ</div>
+                                <div class="column col5">
+                                    <i class="fa-solid fa-trash"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end info -->
+                    </div>
+                    <!-- end cart section -->
+
+                    <!-- start location section -->
+                    <div class="location">
+                        <div class="radio-select">
+                            <label for="option1">
+                                <input style="margin-right:10px" type="radio" name="options" value="option1">Giao hàng
+                                tận nơi
+                            </label>
+                            <label for="option2">
+                                <input style="margin-right:10px" type="radio" name="options" value="option2"
+                                    checked>Nhận tại nhà thuốc
+                            </label>
+                        </div>
+                        <!--start at the pharmacy section-->
+                        <div class="delivery at-the-pharmacy">
+                            <div class="info-cus">
+                                <i style="margin-right: 40px" class="fa-solid fa-user"></i>
+                                <p>Thông tin người nhận
+                                    <br>Võ Thị Thu Thảo | 0869755905
+                                </p>
+                            </div>
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <!-- end at the pharmacy section -->
+
+                        <!-- start delivery section -->
+                        <div style="display: none;" class="delivery at-home">
+                            <div class="info-cus">
+                                <i style="margin-right: 40px" class="fa-solid fa-location-dot"></i>
+                                <p>Thêm địa chỉ giao hàng</p>
+                            </div>
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <!-- end delivery section -->
+                    </div>
+                    <!-- end location section -->
+
+                    <!-- start payment section -->
+                    <div class="payment-method">
+                        <h2 class="title">Chọn hình thức thanh toán</h2>
+                        <div class="payment">
+                            <label for="payment-option1">
+                                <img src="img/cash.png" alt="">
+                                <p><span class="bold" style="margin-bottom:5px">Tiền mặt</span><br>Thanh toán bằng tiền
+                                    mặt khi nhận hàng</p>
+                                <input style="margin:0 20px 0 10px" type="radio" name="payment-options"
+                                    value="payment-option1" checked>
+                            </label>
+                            <label for="payment-option2">
+                                <img src="img/momo.png" alt="">
+                                <p><span class="bold" style="margin-bottom:5px">Momo</span><br>Thanh toán bằng ví điện
+                                    tử MoMo</p>
+                                <input style="margin:0 20px 0 10px" type="radio" name="payment-options"
+                                    value="payment-option2">
+                            </label>
+                            <label for="payment-option3">
+                                <img src="img/viettel.png" alt="">
+                                <p><span class="bold" style="margin-bottom:5px">Viettel Money</span><br>Thanh toán bằng
+                                    ViettelPay</p>
+                                <input style="margin:0 20px 0 10px" type="radio" name="payment-options"
+                                    value="payment-option3">
+                            </label>
+                            <label for="payment-option4">
+                                <img src="img/atm.png" alt="">
+                                <p><span class="bold" style="margin-bottom:5px">Thẻ ATM</span><br>Bạn sẽ thanh toán
+                                    trước số tiền của đơn hàng qua thẻ ATM nội địa</p>
+                                <input style="margin:0 20px 0 10px" type="radio" name="payment-options"
+                                    value="payment-option4">
+                            </label>
+                        </div>
+                    </div>
+                    <!-- end payment section -->
+                </div>
+                <!-- end left column -->
+
+                <!-- start right column -->
+                <div class="right">
+                    <div class="voucher">
+                        <div class="select">
+                            <h2 class="title">Mã giảm giá</h2>
+                            <a href="#">Chọn mã giảm giá</a>
+                        </div>
+                        <p> Ghi chú đơn hàng</p>
+                        <textarea></textarea>
+                    </div>
+                    <!-- start bill section -->
+                    <div class="bills">
+                        <h2 class="title">Hóa đơn mua hàng</h2>
+                        <!-- start voucher section -->
+
+                        <!-- end voucher section -->
+                        <div class="info-bill">
+                            <div class="bill billrow1">
+                                <p>Tạm tính</p>
+                                <p class="bold">19.500 đ</p>
+                            </div>
+                            <div class="bill billrow2">
+                                <p>Giảm giá</p>
+                                <p class="bold">-0 đ</p>
+                            </div>
+                            <div class="bill billrow3">
+                                <p>Tổng cộng</p>
+                                <p class="bold">19.500</p>
+                            </div>
+                            <div class="bill billrow4" style="color: rgba(20, 44, 82, 0.5)">(Đã bao gồm VAT)</div>
+                            <div class="bill billrow5">
+                                <button class="order">Đặt hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end bill section -->
+                </div>
+                <!-- end right column -->
+            </div>
+            <!-- end cart-info section -->
+            <div class="line-blue"></div>
+        </div>
+        <!-- End body -->
+        <!-- Start footer -->
+        <div id="footer-content"></div>
+        <!-- End footer -->
+        <!-- Start success Section -->
+        <div id="order-success">
+            Đặt hàng thành công
+        </div>
+        <!-- End success section -->
+        <!-- js -->
+        <script src="js/header_footer.js"></script>
+        <script src="js/order.js"></script>
+    </main>
+</body>
+
+</html>
