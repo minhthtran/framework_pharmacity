@@ -128,14 +128,74 @@ body {
 }
 
 /* delete */
-.cart-info .info .col5 {
-    width: 25px;
+.cart-info .info .col5 button {
     transition: 0.3s ease-in-out;
+    border: none;
 }
 
 .cart-info .info .col5 :hover {
     color: #0F62F9;
     cursor: pointer;
+}
+
+.cart-info #confirm-delete {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 100px;
+    background-color: #FEAA48;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    line-height: 40px;
+    color: #142C52;
+    font-weight: 600;
+    display: none;
+}
+
+.cart-info #confirm-delete p {
+    padding: 10px 0 0;
+}
+
+.cart-info #confirm-delete button {
+    height: 30px;
+    border-radius: 10px;
+    padding: 0 10px;
+    border: none;
+    margin-right: 10px;
+    color: #142C52;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.cart-info #confirm-delete button:hover {
+    cursor: pointer;
+    background-color: #142C52;
+    color: #E0E0E0;
+}
+
+/* Delete success */
+#delete-success {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 100px;
+    line-height: 60px;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    background-color: #FEAA48;
+    color: #142C52;
+    font-weight: 600;
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: 0.3s ease-in-out;
 }
 
 /* Right */
@@ -161,7 +221,7 @@ body {
     margin-bottom: 25px;
 }
 
-.bills .bill button.order {
+.bills .bill button#order {
     width: 100%;
     height: 60px;
     background: #FEAA48;
@@ -172,7 +232,7 @@ body {
     color: #FFFFFF;
 }
 
-.bills .bill button.order:hover {
+.bills .bill button#order:hover {
     cursor: pointer;
     opacity: 0.8;
 }
@@ -181,25 +241,21 @@ body {
 #order-success {
     position: fixed;
     top: 50%;
-}
-
-#order-success {
-    position: fixed;
-    top: 50%;
     left: 50%;
+    width: 400px;
+    height: 100px;
+    line-height: 60px;
     transform: translate(-50%, -50%);
     z-index: 9999;
-    background-color: #fff;
+    background-color: #FEAA48;
+    color: #142C52;
+    font-weight: 600;
     padding: 20px;
-    border-radius: 5px;
+    font-size: 18px;
+    border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
     text-align: center;
-}
-
-#order-success p {
-    font-size: 24px;
-    color: #0F62F9;
-    margin: 0;
+    transition: 0.3s ease-in-out;
 }
 
 /* Line finish */
@@ -280,9 +336,69 @@ body {
     margin: 20px 0 0;
 }
 
+.location #at-the-pharmacy button {
+    border: none;
+    cursor: pointer;
+}
+
+.location #at-the-pharmacy button:hover {
+    color: #0F62F9;
+}
+
 .delivery .info-cus {
     display: flex;
     align-items: center;
+}
+
+#receiver-infor {
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    width: 450px;
+    height: 380px;
+    transform: translate(-50%, -50%);
+    background: #FFFFFF;
+    color: #142C52;
+    font-size: 18px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    display: none;
+}
+
+#receiver-infor .customer-number,
+#receiver-infor .customer-name {
+    margin-left: 25px;
+}
+
+#receiver-infor .customer-number input,
+#receiver-infor .customer-name input {
+    width: 400px;
+    height: 50px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 2px solid rgba(196, 196, 196, 1);    
+    padding-left: 10px;
+}
+
+#receiver-infor button {
+    width: 415px;
+    height: 70px;
+    background: #0F62F9;
+    border: 1px solid #0F62F9;
+    border-radius: 15px;
+    color: #FCFCFC;
+    margin: 0 0 20px 20px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#receiver-infor button:hover {
+    opacity: 0.8;
+    cursor: pointer;
 }
 
 /* Payment */
