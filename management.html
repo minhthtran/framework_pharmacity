@@ -1,148 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto"
-      rel="stylesheet"
-    />
-    <title>Document</title>
-  </head>
-  <body>
-    <style>
-      .header {
-        display: flex;
-        justify-content: space-between;
-        padding: 0 30px 0 38px;
-        align-items: center;
-      }
-      .header button {
-        background: none;
-        border: none;
-      }
-      .search-container {
-        position: relative;
-      }
-      .search-bar {
-        width: 400px;
-        height: 45px;
-        background: #f7f8f9;
-        border-radius: 10px;
-        border: 2px solid gray;
-        padding-left: 10px;
-      }
-      .fa-search {
-        position: absolute;
-        right: 10px;
-        top: 50%;
-        transform: translateY(-50%);
-        font-size: 20px;
-      }
-      .fa-bell,
-      .fa-user-circle {
-        font-size: 32px;
-        color: rgb(67, 63, 63);
-      }
-      .personal {
-        display: flex;
-      }
-      .body {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap:40px;
-        padding: 45px 36px 0 35px;
-      }
 
-      .employee-function {
-        display: block;
-        padding-left: 35px;
-        white-space: nowrap;
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+  <link rel="stylesheet" href="management.css">
+  <link rel="icon" href="img/favicon.png">
+  <title>Quản lý</title>
+</head>
 
-        grid-template-columns: 270px auto;
-      }
-
-      .employee-function {
-        display: flex;
-        flex-direction: column;
-        justify-content:center
-        
-      }
-      .employee-function p {
-        font-family: "Roboto", sans-serif;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 18px;
-        color: #142C52;
-      }
-      .employee-function i {
-        font-size: 22px;
-        margin-right: 20px; 
-        width: 25px;
-        height: 25px;
-      }
-      .employee-function p:hover{
-        color:#21a07c;
-        cursor: pointer;
-      }
-      .thumbnail-seo {
-        justify-self: start;
-        align-self: end;
-      }
-      .thumbnail-seo img {
-        border-radius: 13px;
-      
-      }
-    </style>
-    <main>
-      <!-- Start div body -->
-      <div class="header">
-        <div>
-          <a href=""><img src="img/pharma 1 1.png" alt="" /></a>
-        </div>
-        <div class="search-container">
-          <input
-            class="search-bar"
-            type="text"
-            placeholder="Search..."
-            name="search"
-          />
-          <i class="fas fa-search"></i>
-        </div>
-        <div class="personal">
-          <button><i class="fas fa-bell"></i></button>
-          <button class="user-account">
-            <i class="fas fa-user-circle"></i>
-          </button>
-          <!-- <div>
-            <p>123</p>
-            <p>456</p>
-          </div> -->
+<body>
+  <!-- Start header section -->
+  <div class="header">
+    <div>
+      <a href=""><img src="img/pharma 1 1.png" alt="" /></a>
+    </div>
+    <div class="search-container">
+      <input class="search-bar" type="text" placeholder="Search..." name="search" />
+      <i class="fas fa-search"></i>
+    </div>
+    <div class="personal">
+      <button><i class="fas fa-bell"></i></button>
+      <div class="user-account">
+        <i class="fas fa-user-circle"></i>
+        <div class="name">
+          Cavin petarson
+          <span>Manager</span>
         </div>
       </div>
-      <!-- End div header -->
-      <!-- Start div body -->
-      <div class="body">
-        <div class="employee-function">
-          <p><i class="fas fa-home"></i> Trang chủ</p>
-          <p><i class="fas fa-user"></i> Hồ sơ</p>
-          <p><i class="fas fa-shopping-cart"></i> Quản lý đơn hàng</p>
-          <p><i class="fas fa-users"></i> Quản lý khách hàng</p>
-          <p><i class="fas fa-id-card"></i> Quản lý nhân viên</p>
-          <p><i class="fas fa-box-open"></i> Quản lý sản phẩm</p>
-          <p><i class="fas fa-pen"></i> Quản lý tài khoản</p>
-          <p><i class="fas fa-chart-line"></i> Báo cáo doanh thu</p>
-          <p><i class="fas fa-question-circle"></i> Trợ giúp</p>
-        </div>
-        <div class="thumbnail-seo">
-          <img src="img/thumbnail-seo 1.png" alt="" />
-        </div>
-      </div>
-    </main>
-  </body>
+    </div>
+  </div>
+  <!-- end header section -->
+
+  <!-- Start div body -->
+  <div class="body">
+    <div class="employee-function">
+      <p><i class="fas fa-home"></i> Trang chủ</p>
+      <p><i class="fas fa-user"></i> Hồ sơ</p>
+      <p><i class="fas fa-shopping-cart"></i> Quản lý đơn hàng</p>
+      <p><i class="fas fa-users"></i> Quản lý khách hàng</p>
+      <p><i class="fas fa-id-card"></i> Quản lý nhân viên</p>
+      <p><i class="fas fa-box-open"></i> Quản lý sản phẩm</p>
+      <p><i class="fas fa-pen"></i> Quản lý tài khoản</p>
+      <p><i class="fas fa-chart-line"></i> Báo cáo doanh thu</p>
+      <p><i class="fas fa-question-circle"></i> Trợ giúp</p>
+    </div>
+    <div class="thumbnail-seo">
+      <img src="img/thumbnail-seo 1.png" alt="" />
+    </div>    
+  </div>
+  <!-- end div body -->  
+  <!-- Footer start -->
+  <div id="footer-content">
+    <script>
+      fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById("footer-content").innerHTML = data;
+        });
+      </script>
+  </div>
+  <!-- Footer end -->
+  <script src="js/header_footer.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+
 </html>
