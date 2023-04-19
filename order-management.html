@@ -291,8 +291,11 @@
 
       buttons.forEach(function (button) {
         button.addEventListener("click", function () {
-          button.innerText = "Đã duyệt";
-          button.style.backgroundColor = "#5eab46";
+          var confirmResult = confirm("Bạn có thực sự muốn duyệt đơn?");
+          if (confirmResult) {
+            button.innerText = "Đã duyệt";
+            button.style.backgroundColor = "#5eab46";
+          }
         });
       });
     </script>
