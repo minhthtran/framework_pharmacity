@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+    <script src="js/profile.js"></script>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="icon" href="img/favicon.png">
+    <title>Quản lý</title>
+</head>
+
+<body>
+    <!-- Start header section -->
+    <div class="header">
+        <div>
+            <a href=""><img src="img/pharma 1 1.png" alt="" /></a>
+        </div>
+        <div class="search-container">
+            <input class="search-bar" type="text" placeholder="Search..." name="search" />
+            <i class="fas fa-search"></i>
+        </div>
+        <div class="personal">
+            <button><i class="fas fa-bell"></i></button>
+            <div class="user-account">
+                <i class="fas fa-user-circle"></i>
+                <div class="name">
+                    Cavin petarson
+                    <span>Manager</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end header section -->
+
+    <!-- Start div body -->
+    <div class="body">
+        <!-- start employ section -->
+        <div class="employee-function">
+            <p><i class="fas fa-home"></i> Trang chủ</p>
+            <p><i class="fas fa-user"></i> Hồ sơ</p>
+            <p><i class="fas fa-shopping-cart"></i> Quản lý đơn hàng</p>
+            <p><i class="fas fa-users"></i> Quản lý khách hàng</p>
+            <p><i class="fas fa-id-card"></i> Quản lý nhân viên</p>
+            <p><i class="fas fa-box-open"></i> Quản lý sản phẩm</p>
+            <p><i class="fas fa-pen"></i> Quản lý tài khoản</p>
+            <p><i class="fas fa-chart-line"></i> Báo cáo doanh thu</p>
+            <p><i class="fas fa-question-circle"></i> Trợ giúp</p>
+        </div>
+        <!-- end employ section -->
+
+        <!-- start profile section -->
+        <div class="profile-container">
+            <div class="edit">
+                <i class="fa-solid fa-pen"></i> Edit
+            </div>
+            <div class="user-profile">
+                <img src="img/user-profile.png" alt="">
+                <div class="name-user">
+                    <h2>Lương Nhã Kỳ</h2>
+                    <p>ID: 17</p>
+                </div>
+            </div>
+            <div class="profile">
+                <div class="row">
+                    <p>Username</p>
+                    <p>luongnhaky</p>
+                </div>
+                <div class="row">
+                    <p>Email</p>
+                    <p>luongnhaky@gmail.com</p>
+                </div>
+                <div class="row">
+                    <p>Phone</p>
+                    <p>0365534364</p>
+                </div>
+                <div class="row">
+                    <p>Address</p>
+                    <p>@DiaChi</p>
+                </div>
+                <div class="row">
+                    <p>Password</p>
+                    <div class="hide">
+                        <i class="fa-solid fa-eye" onclick="togglePassword()"></i>
+                        <p id="password" data-password="12345">*****</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end profile section -->
+    </div>
+    <!-- end div body -->
+    <!-- Footer start -->
+    <div id="footer-content">
+        <script>
+            fetch("footer.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("footer-content").innerHTML = data;
+                });
+        </script>
+    </div>
+    <!-- Footer end -->
+</body>
+
+</html>

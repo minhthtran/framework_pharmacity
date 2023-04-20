@@ -1,0 +1,167 @@
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px 0 38px;
+    align-items: center;
+}
+
+.header img {
+    width: 164px;
+}
+
+.header button {
+    background: none;
+    border: none;
+}
+
+.search-container {
+    position: relative;
+}
+
+.search-bar {
+    width: 400px;
+    height: 45px;
+    background: #f7f8f9;
+    border-radius: 10px;
+    border: 2px solid gray;
+    padding-left: 10px;
+}
+
+.fa-search {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.fa-bell,
+.fa-user-circle {
+    font-size: 32px;
+    color: rgb(67, 63, 63);
+    padding: 0 10px;
+}
+
+.personal {
+    display: flex;
+    font-weight: 500;
+    font-size: 16px;
+    color: #23395C;
+    font-family: 'Inter';
+}
+
+.personal .user-account {
+    display: flex;
+    align-items: center;
+}
+
+.personal .user-account .name {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px 0 0;
+}
+
+.user-account .name span {
+    color: #B6B6B6;
+}
+
+.personal:hover {
+    cursor: pointer;
+    color: #5EAB46;
+}
+
+.personal button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+/* Body */
+.body {
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-gap: 40px;
+    padding: 45px 36px 30px 0;
+}
+
+/* Employ section */
+.employee-function {
+    display: block;
+    padding-left: 30px;
+    white-space: nowrap;
+    grid-template-columns: 270px auto;
+}
+
+.employee-function {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.employee-function p {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #142C52;
+}
+
+.employee-function i {
+    font-size: 22px;
+    margin-right: 20px;
+    width: 23px;
+    height: 23px;
+}
+
+.employee-function p:hover {
+    color: #21a07c;
+    cursor: pointer;
+}
+
+/* Profile*/
+.body .profile-container {
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 250px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #142C52;
+
+}
+
+.profile-container .edit {
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.profile-container .edit:hover {
+    color: #21a07c;
+}
+
+.profile-container .user-profile {
+    width: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-container .profile .row {
+    padding: 30px 0 0 0;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-container .profile .row .hide {
+    display: flex;
+}
+
+.profile-container .profile .row i:hover {
+    cursor: pointer;
+    color: #21a07c;
+}
+
