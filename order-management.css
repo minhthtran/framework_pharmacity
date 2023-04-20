@@ -118,6 +118,12 @@ body {
     background-color: #feaa48;
 }
 
+#delete:hover,
+#export:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
 select {
     font-family: "Inter";
     font-style: normal;
@@ -135,6 +141,78 @@ select {
 table {
     margin-top: 30px;
 }
+
+table input {
+    cursor: pointer;
+}
+
+/* Thong bao xoa*/
+#confirm-delete {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 120px;
+    background-color: #FEAA48;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    line-height: 40px;
+    color: #142C52;
+    font-weight: 600;
+    display: none;
+}
+
+#confirm-delete p {
+    padding: 10px 0 0;
+}
+
+#confirm-delete .toast-body #btn-delete-success,
+#confirm-delete .toast-body .close {
+    height: 30px;
+    line-height: 30px;
+    border-radius: 10px;
+    padding: 0 10px;
+    border: none;
+    margin-right: 10px;
+    color: #142C52;
+    background-color: #E0E0E0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#confirm-delete .toast-body #btn-delete-success:hover,
+#confirm-delete .toast-body .close:hover {
+    cursor: pointer;
+    background-color: #142C52;
+    color: #E0E0E0;
+}
+
+/* Delete success */
+#delete-success {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 100px;
+    line-height: 60px;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    background-color: #FEAA48;
+    color: #142C52;
+    font-weight: 600;
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+/*  */
+
 
 table thead tr {
     font-weight: 700;
@@ -168,3 +246,132 @@ input[type="checkbox"] {
     border: 1.5px solid #142c52;
 }
 
+/* Panigation */
+.body .panigation-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.panigation-section .panigation {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panigation-section .panigation i {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 18px;
+    background: #142C52;
+    margin: 0 20px;
+}
+
+.panigation-section .panigation p {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 18px;
+    background: #142C52;
+    margin: 2px 10px 0 10px;
+}
+
+.panigation i:hover,
+.panigation p:hover {
+    cursor: pointer;
+    background-color: #FEAA48;
+    transition: 0.3s ease-in-out;
+}
+
+.panigation-section .show-row {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.show-row p {
+    padding-top: 16px;
+}
+
+.show-row button {
+    width: 118.01px;
+    height: 47px;
+    background: #142C52;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+}
+
+.show-row button:hover {
+    opacity: 0.8;
+}
+
+/* Export */
+.export-section {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 900px;
+    height: 460px;
+    transform: translate(-50%, -50%);
+    background: #FFFFFF;
+    border: 5px solid #5EAB46;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    padding: 0 0 0 20px;
+    display: none;
+}
+
+.export-section>p {
+    color: #5EAB46;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.export-section .title-export {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px 0;
+    color: #5EAB46;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.title-export button {
+    border: none;
+    color: #5EAB46;
+    background: none;
+}
+
+.title-export button:hover {
+    opacity: 0.6;
+}
+
+.export-section .infor-order {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.export-section .detail-order p,
+.export-section .infor-order p {
+    font-weight: 700;
+    font-size: 18px;
+    color: #142C52;
+}
+
+.export-section .detail-order span,
+.export-section .infor-order span {
+    font-weight: 400;
+}
+.export-section .detail-order {
+    display: grid;
+    grid-template-columns: auto auto;
+}
